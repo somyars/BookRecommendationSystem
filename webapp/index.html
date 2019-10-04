@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <title>My Book Recommender</title>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css\index-css.css" />
+    <script src="js\index.js"></script>
+</head>
+
+<body>
+<div class="form"> 
+      <ul class="tab-group">
+        <li class="tab active"><a href="#signup">Sign Up</a></li>
+        <li class="tab"><a href="#login">Log In</a></li>
+      </ul>
+      
+	  
+<!--Below div is for the sign-up/registration-->
+      <div class="tab-content">
+        <div id="signup">   
+          <h1>Sign Up for Free</h1>          
+          <form action="/" method="post">
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                First Name<span class="req">*</span>
+              </label>
+			  <input type="text" id="First_name" required autocomplete="off" />        
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Last Name<span class="req">*</span>
+              </label>
+              <input type="text" id="Last_name" required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" id="Email" required autocomplete="off"/>
+          </div>
+          
+		  
+		  <div class="field-wrap">
+            <label>
+              Set A Password<span class="req">*</span>
+            </label>
+            <input type="password" id="Set_A_Password" required autocomplete="off"/>
+          </div>
+		  
+		  
+		  <select id="myDropdown"> 
+          <option disabled selected value>  Select your Interest  </option>		  
+		  <option value="Children">Children</option>
+		  <option value="Comics">Comic</option>
+		  <option value="History">History</option>
+		  <option value="Mystery">Mystery</option>
+		  <option value="Poetry">Poetry</option>
+		  <option value="Romance">Romance</option>
+		  <option value="Adult">Adult</option>    
+		  </select> <br> <br>
+          
+          <button id="demo" onclick="fire_ajax_signup()" type="submit" class="button button-block"/>Get Started</button>       
+          </form>
+        </div>
+        
+		
+<!--Below div is for user login-->
+        <div id="login">   
+          <h1>Welcome Back!</h1>
+          
+          <form action="/" method="post">
+          
+            <div class="field-wrap">
+            <label>
+              Email Address<span class="req">*</span>
+            </label>
+            <input type="email" id="Email_Address" required autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" id="Password" required autocomplete="off"/>
+          </div>
+          
+          <button id="btn" onclick="fire_ajax_Login()" class="button button-block"/>Log In</button>
+          </form>
+        </div>
+      </div>
+      
+</div>
+</body>
+</html>

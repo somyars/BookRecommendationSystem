@@ -1,0 +1,121 @@
+﻿<html>
+
+<link rel="stylesheet" href="css/home-css.css">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script src="js/main.js"></script>
+
+</script>
+
+
+<!-- Load icon library for the search bar, utilized https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Some part of the template is taken from https://codepen.io/leab/pen/wWQGzj -->
+<header id="top">
+    <p><i class="fa fa-book" style="font-size:80px;color:green"></i>My Book Recommender</p>
+	<a href="index.html" id="logout">Logout<i class="fa fa-sign-out" style="font-size:20px;color:red;padding:10px"></i></a>
+	<a href="#top" id="home"><i class="fa fa-home" style="font-size:20px;color:white;padding:10px"></i>Home</a>
+</header>
+
+<br/>
+
+<!--Below div is for the headers-->
+<div class="navbar">
+  <a href="#sectionPopularBooks">Popular Books</a>
+  <a href="#sectionNewReleases">New Releases</a>
+  <a href="#sectionChildren">Children</a>
+  <a href="#sectionComics">Comics</a>
+  <a href="#sectionHistory">History</a>
+  <a href="#sectionMystery">Mystery</a>
+  <a href="#sectionPoetry">Poetry</a>
+  <a href="#sectionRomance">Romance</a>
+  <a href="#sectionAdult">Adult</a>
+  <!--This search bar code was taken from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_search_button -->
+  <form class="searchBar" action="">
+            <input type="text" placeholder="Search.." name="search" id="search">		
+            <!--<button type="submit"><i class="fa fa-search"></i></button>-->
+  </form>		
+</div>
+
+
+<!--Below div is for the sections of books based of different categories-->
+<div class="container">
+	<section id="sectionSearchResult" style="display:none">
+        <h1 class="sectionTitle">Search Results</h1>
+        <div class="examples" id="result" style="display: table;clear: both;">       
+        </div>
+    </section>
+
+	<section id="sectionPopularBooks">
+        <h1 class="sectionTitle">Popular Books</h1>
+        <!--<button type="button" id="btnViewPopular" onclick="viewAllPopularBooks()" class="viewButton">View All</button>-->
+        <div class="examples" id="popularBooks" style="display: table;clear: both;">        
+        </div>
+    </section>
+
+    <section id="sectionNewReleases">
+        <h1 class="sectionTitle">New Releases</h1>
+        <!--<button type="button" id="btnViewNewReleases" onclick="viewAllNewReleases()" class="viewButton">View All</button>-->
+        <div class="examples" id="newReleaseBooks" style="display: table;clear: both;">
+    </section>
+
+	<section id="sectionYouMayAlsoLike">
+        <h1 class="sectionTitle">You May Also Like</h1>
+        <!--<button type="button" id="btnViewRecommendations" onclick="viewAllRecommendations()" class="viewButton">View All</button>-->
+        <div class="examples" id="recommendations" style="display: table;clear: both;">
+    </section>
+	
+    <section id="sectionChildren">
+        <h1 class="sectionTitle">Children</h1>
+        <!--<button type="button" onclick="viewAllChildren()" class="viewButton">View All</button>-->
+        <div class="examples" id="childrenBooks" style="display: table;clear: both;">
+    </section>
+  
+    <section id="sectionComics">
+        <h1 class="sectionTitle">Comics</h1>
+        <!--<button type="button" onclick="viewAllComics()" class="viewButton">View All</button>-->
+        <div class="examples" id="comicBooks" style="display: table;clear: both;">
+    </section>
+ 
+    <section id="sectionHistory">
+        <h1 class="sectionTitle">History</h1>
+        <!--<button type="button" onclick="viewAllHistory()" class="viewButton">View All</button>-->
+        <div class="examples" id="historyBooks" style="display: table;clear: both;">
+    </section>
+  
+    <section id="sectionMystery">
+        <h1 class="sectionTitle">Mystery</h1>
+        <!--<button type="button" onclick="viewAllMystery()" class="viewButton">View All</button>-->
+        <div class="examples" id="mysteryBooks" style="display: table;clear: both;">
+    </section>
+    
+    <section id="sectionPoetry">
+        <h1 class="sectionTitle">Poetry</h1>
+        <!--<button type="button" onclick="viewAllPoetry()" class="viewButton">View All</button>-->
+        <div class="examples" id="poetryBooks" style="display: table;clear: both;">
+	</section>
+    <section id="sectionRomance">
+        <h1 class="sectionTitle">Romance</h1>
+        <!--<button type="button" onclick="viewAllRomance()" class="viewButton">View All</button>-->
+        <div class="examples" id="romanceBooks" style="display: table;clear: both;">
+	</section>
+    
+    <section id="sectionAdult">
+        <h1 class="sectionTitle">Adult</h1>
+        <!--<button type="button" onclick="viewAllAdult()" class="viewButton">View All</button>-->
+        <div class="examples" id="adultBooks" style="display: table;clear: both;">
+    </section>
+ 
+</html>

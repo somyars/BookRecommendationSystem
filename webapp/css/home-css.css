@@ -1,0 +1,1213 @@
+﻿@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+html {
+	margin: 0;
+	background: #333;
+	font-family: helvetica;
+	max-width: 1920px;
+}
+
+body {
+	margin: 0;
+}
+
+#exampleText1 {
+	display: hidden;
+}
+
+.container {
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+/*Navbar : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu */
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+}
+
+#logout {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+#home {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.navbar a {
+	padding: 20px;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	font-size: 1.85em;
+}
+
+.examples {
+	text-align: center;
+	margin-left: 0px;
+	display: table;
+	clear: both;
+}
+
+.image:hover {
+	-webkit-transform: scale(1.35);
+	transform: scale(1.35);
+	opacity: .9;
+}
+
+.image {
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	padding: 30px;
+	margin: auto;
+}
+
+
+/*#example1:hover {
+		   opacity: .1;
+		}*/
+
+span.text-content {
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 150px;
+	left: 30px;
+	position: absolute;
+	top: 15px;
+	width: 280px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+span.text-content span {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 75px;
+	/*150*/
+	margin: 0 1em 1em 0;
+	position: relative;
+	width: 140px;
+	/*280*/
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.banner {
+	text-align: center;
+	font-weight: 800;
+	padding-bottom: 80px;
+}
+
+.sectionTitle {
+	text-align: center;
+	padding: 10px;
+	border-top: 3px solid rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+	font-family: 'Tangerine', serif;
+	font-size: 50px;
+}
+
+li.image {
+	margin: auto;
+}
+
+.sidenav {
+	display: none;
+	height: 400px;
+	width: 100%;
+	z-index: 6;
+	top: 306px;
+	position: relative;
+	color: #eee;
+	left: 0;
+	position: absolute;
+	background: #555;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #bbb;
+	display: block;
+	transition: 0.3s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+header {
+	background: #222;
+	color: white;
+	height: 50px;
+	padding: 25px;
+	font-family: 'Tangerine', serif;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+#row2 {
+	position: relative;
+}
+
+.input-group.md-form.form-sm.form-2 input.amber-border {
+	border: 1px solid #ffca28;
+}
+
+.btn {
+	float: right;
+	width: 20%;
+	padding: 5px;
+	background: #2196F3;
+	color: white;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+.btn button:hover {
+	background: #0b7dda;
+}
+
+
+/*The following code was from https://www.w3schools.com/howto/howto_css_search_button.asp */
+
+
+/* Style the search field */
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
+form.searchBar input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: right;
+	width: 20%;
+	background: #f1f1f1;
+}
+
+
+/* Style the submit button */
+
+form.searchBar button {
+	float: right;
+	width: 5%;
+	padding: 11px;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+form.searchBar button:hover {
+	background: #0b7dda;
+}
+
+
+/* Clear floats */
+
+form.searchBar::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/* CSS for Ratings Source:https://codepen.io/tammykimkim/pen/yegZRw*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.rate {
+	float: left;
+	height: 46px;
+	padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+	position: absolute;
+	top: -9999px;
+}
+
+.rate:not(:checked)>label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 30px;
+	color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+	content: '★';
+}
+
+.rate>input:checked~label {
+	color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+	color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+	color: #c59b08;
+}
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* General Buttons https://codepen.io/slimsmearlapp/pen/HJgFG*/
+
+.viewButton {
+	width: 130px;
+	height: 40px;
+	background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%);
+	/* W3C */
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	border-bottom: 4px solid #2b8bc6;
+	color: #fbfbfb;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	font-size: 15px;
+	text-align: left;
+	text-indent: 5px;
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+	cursor: pointer;
+	display: block;
+	float: right;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.viewButton:active {
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+	top: 1px;
+}
+
+.viewButton:after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	border-top: 20px solid #187dbc;
+	border-bottom: 20px solid #187dbc;
+	border-left: 16px solid transparent;
+	border-right: 20px solid #187dbc;
+	position: absolute;
+	opacity: 0.6;
+	right: 0;
+	top: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+
+/* General Buttons end*/
+
+html {
+	margin: 0;
+	background: #333;
+	font-family: helvetica;
+	max-width: 1920px;
+}
+
+body {
+	margin: 0;
+}
+
+#exampleText1 {
+	display: hidden;
+}
+
+.container {
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+/*Navbar : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu */
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+}
+
+#logout {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+#home {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.navbar a {
+	padding: 20px;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	font-size: 1.85em;
+}
+
+.examples {
+	text-align: center;
+	margin-left: 0px;
+	display: table;
+	clear: both;
+}
+
+.image:hover {
+	-webkit-transform: scale(1.35);
+	transform: scale(1.35);
+	opacity: .9;
+}
+
+.image {
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	padding: 30px;
+	margin: auto;
+}
+
+
+/*#example1:hover {
+		   opacity: .1;
+		}*/
+
+span.text-content {
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 150px;
+	left: 30px;
+	position: absolute;
+	top: 15px;
+	width: 280px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+span.text-content span {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 75px;
+	/*150*/
+	margin: 0 1em 1em 0;
+	position: relative;
+	width: 140px;
+	/*280*/
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.banner {
+	text-align: center;
+	font-weight: 800;
+	padding-bottom: 80px;
+}
+
+.sectionTitle {
+	text-align: center;
+	padding: 10px;
+	border-top: 3px solid rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+	font-family: 'Tangerine', serif;
+	font-size: 50px;
+}
+
+li.image {
+	margin: auto;
+}
+
+.sidenav {
+	display: none;
+	height: 400px;
+	width: 100%;
+	z-index: 6;
+	top: 306px;
+	position: relative;
+	color: #eee;
+	left: 0;
+	position: absolute;
+	background: #555;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #bbb;
+	display: block;
+	transition: 0.3s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+header {
+	background: #222;
+	color: white;
+	height: 50px;
+	padding: 25px;
+	font-family: 'Tangerine', serif;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+#row2 {
+	position: relative;
+}
+
+.input-group.md-form.form-sm.form-2 input.amber-border {
+	border: 1px solid #ffca28;
+}
+
+.btn {
+	float: right;
+	width: 20%;
+	padding: 5px;
+	background: #2196F3;
+	color: white;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+.btn button:hover {
+	background: #0b7dda;
+}
+
+
+/*The following code was from https://www.w3schools.com/howto/howto_css_search_button.asp */
+
+
+/* Style the search field */
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
+form.searchBar input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: right;
+	width: 20%;
+	background: #f1f1f1;
+}
+
+
+/* Style the submit button */
+
+form.searchBar button {
+	float: right;
+	width: 5%;
+	padding: 11px;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+form.searchBar button:hover {
+	background: #0b7dda;
+}
+
+
+/* Clear floats */
+
+form.searchBar::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/* CSS for Ratings Source:https://codepen.io/tammykimkim/pen/yegZRw*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.rate {
+	float: left;
+	height: 46px;
+	padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+	position: absolute;
+	top: -9999px;
+}
+
+.rate:not(:checked)>label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 30px;
+	color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+	content: '★';
+}
+
+.rate>input:checked~label {
+	color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+	color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+	color: #c59b08;
+}
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+
+/* General Buttons https://codepen.io/slimsmearlapp/pen/HJgFG*/
+
+.viewButton {
+	width: 130px;
+	height: 40px;
+	background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%);
+	/* W3C */
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	border-bottom: 4px solid #2b8bc6;
+	color: #fbfbfb;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	font-size: 15px;
+	text-align: left;
+	text-indent: 5px;
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+	cursor: pointer;
+	display: block;
+	float: right;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.viewButton:active {
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+	top: 1px;
+}
+
+.viewButton:after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	border-top: 20px solid #187dbc;
+	border-bottom: 20px solid #187dbc;
+	border-left: 16px solid transparent;
+	border-right: 20px solid #187dbc;
+	position: absolute;
+	opacity: 0.6;
+	right: 0;
+	top: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+
+/* General Buttons end*/
+
+html {
+	margin: 0;
+	background: #333;
+	font-family: helvetica;
+	max-width: 1920px;
+}
+
+body {
+	margin: 0;
+}
+
+#exampleText1 {
+	display: hidden;
+}
+
+.container {
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+}
+
+
+/*Navbar : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu */
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	width: 100%;
+}
+
+#logout {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+}
+
+#home {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}
+
+.navbar a {
+	padding: 20px;
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.navbar a:hover {
+	background: #ddd;
+	color: black;
+}
+
+h1 {
+	margin: 0;
+	color: white;
+	font-size: 1.85em;
+}
+
+.examples {
+	text-align: center;
+	margin-left: 0px;
+	display: table;
+	clear: both;
+}
+
+.image:hover {
+	-webkit-transform: scale(1.35);
+	transform: scale(1.35);
+	opacity: .9;
+}
+
+.image {
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	padding: 30px;
+	margin: auto;
+}
+
+
+/*#example1:hover {
+		   opacity: .1;
+		}*/
+
+span.text-content {
+	color: white;
+	cursor: pointer;
+	display: table;
+	height: 150px;
+	left: 30px;
+	position: absolute;
+	top: 15px;
+	width: 280px;
+	opacity: 0;
+	-webkit-transition: opacity 500ms;
+	-moz-transition: opacity 500ms;
+	-o-transition: opacity 500ms;
+	transition: opacity 500ms;
+}
+
+span.text-content span {
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+ul.img-list {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+ul.img-list li {
+	display: inline-block;
+	height: 75px;
+	/*150*/
+	margin: 0 1em 1em 0;
+	position: relative;
+	width: 140px;
+	/*280*/
+}
+
+ul.img-list li:hover span.text-content {
+	opacity: 1;
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+.banner {
+	text-align: center;
+	font-weight: 800;
+	padding-bottom: 80px;
+}
+
+.sectionTitle {
+	text-align: center;
+	padding: 10px;
+	border-top: 3px solid rgba(0, 0, 0, 0.2);
+	margin-top: 20px;
+	font-family: 'Tangerine', serif;
+	font-size: 50px;
+}
+
+li.image {
+	margin: auto;
+}
+
+.sidenav {
+	display: none;
+	height: 400px;
+	width: 100%;
+	z-index: 6;
+	top: 306px;
+	position: relative;
+	color: #eee;
+	left: 0;
+	position: absolute;
+	background: #555;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow-x: hidden;
+	padding-top: 60px;
+}
+
+.sidenav a {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #bbb;
+	display: block;
+	transition: 0.3s
+}
+
+.sidenav a:hover,
+.offcanvas a:focus {
+	color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
+}
+
+header {
+	background: #222;
+	color: white;
+	height: 50px;
+	padding: 25px;
+	font-family: 'Tangerine', serif;
+	font-size: 60px;
+	font-weight: 700;
+	text-align: center;
+}
+
+p {
+	margin: 0;
+}
+
+#row2 {
+	position: relative;
+}
+
+.input-group.md-form.form-sm.form-2 input.amber-border {
+	border: 1px solid #ffca28;
+}
+
+.btn {
+	float: right;
+	width: 20%;
+	padding: 5px;
+	background: #2196F3;
+	color: white;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+.btn button:hover {
+	background: #0b7dda;
+}
+
+
+/*The following code was from https://www.w3schools.com/howto/howto_css_search_button.asp */
+
+
+/* Style the search field */
+
+
+/** {
+    box-sizing: border-box;
+}*/
+
+form.searchBar input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: right;
+	width: 20%;
+	background: #f1f1f1;
+}
+
+
+/* Style the submit button */
+
+form.searchBar button {
+	float: right;
+	width: 5%;
+	padding: 11px;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	/* Prevent double borders */
+	cursor: pointer;
+}
+
+form.searchBar button:hover {
+	background: #0b7dda;
+}
+
+
+/* Clear floats */
+
+form.searchBar::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+
+/* CSS for Ratings Source:https://codepen.io/tammykimkim/pen/yegZRw*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.rate {
+	float: left;
+	height: 46px;
+	padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+	position: absolute;
+	top: -9999px;
+}
+
+.rate:not(:checked)>label {
+	float: right;
+	width: 1em;
+	overflow: hidden;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 30px;
+	color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+	content: '★';
+}
+
+.rate>input:checked~label {
+	color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+	color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+	color: #c59b08;
+}
+
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+
+/* General Buttons https://codepen.io/slimsmearlapp/pen/HJgFG*/
+
+.viewButton {
+	width: 130px;
+	height: 40px;
+	background: linear-gradient(to bottom, #4eb5e5 0%, #389ed5 100%);
+	/* W3C */
+	border: none;
+	border-radius: 5px;
+	position: relative;
+	border-bottom: 4px solid #2b8bc6;
+	color: #fbfbfb;
+	font-weight: 600;
+	font-family: 'Open Sans', sans-serif;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+	font-size: 15px;
+	text-align: left;
+	text-indent: 5px;
+	box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, .2);
+	cursor: pointer;
+	display: block;
+	float: right;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.viewButton:active {
+	box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, .2);
+	top: 1px;
+}
+
+
+.viewButton:after {
+	content: "";
+	width: 0;
+	height: 0;
+	display: block;
+	border-top: 20px solid #187dbc;
+	border-bottom: 20px solid #187dbc;
+	border-left: 16px solid transparent;
+	border-right: 20px solid #187dbc;
+	position: absolute;
+	opacity: 0.6;
+	right: 0;
+	top: 0;
+	border-radius: 0 5px 5px 0;
+}
+
+/* General Buttons end*/
