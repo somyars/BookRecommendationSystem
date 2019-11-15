@@ -13,13 +13,24 @@ Check the project demo at https://youtu.be/pbyd2SVwlis
 
 # Tools & Technologies Used
 ● HTML5
+
 ● CSS3
+
 ● jQuery
+
 ● AJAX
+
 ● Django 2.1.12
+
 ● Tastypie RESTful API framework
+
 ● AWS - Galera cluster: MariaDB
+
 ● Python
+
 ● Visual Studio IDE
+
 ● Postman
+
 ● HeidiSQL
+
