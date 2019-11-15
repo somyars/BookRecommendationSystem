@@ -34,3 +34,6 @@ Check the project demo at https://youtu.be/pbyd2SVwlis
 
 ● HeidiSQL
 
+
+# Screenshots
+(screenshots/screen1.png)
