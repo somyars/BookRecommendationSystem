@@ -36,4 +36,4 @@ Check the project demo at https://youtu.be/pbyd2SVwlis
 
 
 # Screenshots
-![Repo List](screenshots/screen1.png)
+![Repo List](screenshots/screen1.PNG)
